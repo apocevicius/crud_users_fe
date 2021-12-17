@@ -1,6 +1,7 @@
 import { Route, Switch } from 'react-router-dom';
 import AllUsers from './pages/AllUsers';
 import AddUser from './pages/AddUser';
+import HomePage from './pages/HomePage';
 import './App.css';
 
 function App() {
@@ -12,6 +13,9 @@ function App() {
         </Route>
         <Route path='/add'>
           <AddUser />
+        </Route>
+        <Route path='/'>
+          <HomePage />
         </Route>
       </Switch>
     </div>

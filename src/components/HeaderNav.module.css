@@ -1,0 +1,37 @@
+.navContainer {
+  background-color: rgba(83, 83, 83, 0.5);
+  text-align: right;
+  min-height: 71px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.116);
+  color: white;
+  position: relative;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+.navContainer > img {
+    border: 1px solid rgba(0, 0, 0, 0.432);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.navLink {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  text-transform: none;
+  font-style: normal;
+  transition: all 0.4s ease-out;
+  color: #111;
+  margin-right: 30px;
+  padding-right: 15px;
+  text-decoration: none;
+  text-align: right;
+}

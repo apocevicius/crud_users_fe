@@ -1,5 +1,9 @@
 function AllUsers() {
-    return ( <div></div> );
+  return (
+    <div>
+      <h1>All Users</h1>
+    </div>
+  );
 }
 
 export default AllUsers;
