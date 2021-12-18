@@ -7,7 +7,7 @@ function AddUser() {
   const [age, setAge] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [usersList, setUsersList] = useState([])
+  const [usersList, setUsersList] = useState([]);
 
   useEffect(() => {
     Axios.get('http://localhost:8000/api/get').then((response) => {
@@ -22,7 +22,22 @@ function AddUser() {
       email: email,
       password: password,
     }).then(() => {
-      alert('Successfully added');
+      setUsersList([
+        ...setUsersList,
+        { name: name, age: age, email: email, password: password },
+      ]);
+    });
+  };
+
+  const deleteUser = (user) => {
+    Axios.delete(`http://localhost:8000/api/delete/${user}`);
+  };
+
+  const updateUser = (user) => {
+    Axios.put('http://localhost:8000/api/update', {
+      name: name,
+      age: age,
+      email: email,
     });
   };
 
@@ -70,12 +85,26 @@ function AddUser() {
           Sukurti
         </button>
 
-          {usersList.map((value) => {
-            return (
-              <h1>Name: {value.name} | Age: {value.age} | Email: {value.email}</h1>
-            )
-          })}
-
+        {usersList.map((value) => {
+          return (
+            <div className={css.card}>
+              <h4>Vardas:</h4>
+              <p>{value.name}</p>
+              <h4>Metai:</h4>
+              <p>{value.age}</p>
+              <h4>El paštas:</h4>
+              <p>{value.email}</p>
+              <button>Atnaujinti</button>
+              <button
+                onClick={() => {
+                  deleteUser(value.name);
+                }}
+              >
+                Ištrinti
+              </button>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
