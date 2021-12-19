@@ -1,0 +1,64 @@
+h1 {
+    margin-top: 50px;
+}
+
+.tableView {
+  font-style: italic;
+  border-collapse: collapse;
+  margin: 35px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tableView thead tr {
+  background-color: rgb(81, 112, 18);
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.tableView th,
+.tableView td {
+  padding: 12px 15px;
+}
+
+.tableView tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.tableView tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.tableView tbody tr:last-of-type {
+  border-bottom: 2px solid rgb(81, 112, 18);
+}
+
+.addNewBtn {
+  margin: 15px;
+  background-color: #4caf50; /* Green */
+  border: none;
+  border-radius: 7px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* .btnBlue {
+  margin: 10px;
+  padding: 2px;
+  color: black;
+  background-color: aqua;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btnRed {
+  background-color: tomato;
+} */

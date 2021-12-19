@@ -22,16 +22,17 @@ const UserList = () => {
 
   return (
     <div>
-      <Link to='/add' className={css.btn}>
+      {/* <Link to='/add' className={css.addNewBtn}>
         Pridėti naują
-      </Link>
+      </Link> */}
+      <h1>Vartotojai:</h1>
       <table className={css.tableView}>
         <thead>
           <tr>
-            <th>Id:</th>
+            <th>ID:</th>
             <th>Vardas:</th>
             <th>Amžius:</th>
-            <th>El paštas:</th>
+            <th>El. paštas:</th>
             <th>Veiksmai:</th>
           </tr>
         </thead>

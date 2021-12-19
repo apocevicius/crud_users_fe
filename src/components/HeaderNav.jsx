@@ -11,13 +11,10 @@ function HeaderNav() {
         />
         <nav className={css.link + ' mainNav'}>
           <NavLink className={css.navLink} exact to='/'>
-            Home
+            Vartotojai
           </NavLink>
           <NavLink className={css.navLink} exact to='/add'>
-            Add User
-          </NavLink>
-          <NavLink className={css.navLink} exact to='/all'>
-            All Users
+            Pridėti vartotoją
           </NavLink>
         </nav>
       </div>

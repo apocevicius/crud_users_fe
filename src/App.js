@@ -3,6 +3,7 @@ import UserList from './pages/UserList';
 import AddUser from './pages/AddUser';
 import EditUser from './pages/EditUser';
 import './App.css';
+import HeaderNav from './components/HeaderNav';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className='container'>
         <div className='columns'>
           <div className='columnHalf'>
+            <HeaderNav />
             <Switch>
               <Route exact path='/'>
                 <UserList />
