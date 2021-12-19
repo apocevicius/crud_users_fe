@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgba(175, 175, 175, 0.247);
+  background-color: rgba(255, 255, 255, 0);
   font-family: 'Lato';
   margin: 0;
   min-width: 375px;
@@ -13,6 +13,7 @@ body {
 }
 
 .container {
+  background-color: rgba(61, 61, 61, 0.082);
   width: 100%;
   max-width: 900px;
   margin: 0 auto;

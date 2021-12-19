@@ -36,11 +36,11 @@ const EditUser = () => {
 
   return (
     <div>
+      <h2>Atnaujinti vartotoją</h2>
       <form onSubmit={updateUser}>
-        <div className='field'>
-          <label className='label'>Vardas</label>
+        <div className={css.field}>
           <input
-            className='input'
+            className={css.input}
             type='text'
             placeholder='Vardas'
             value={name}
@@ -48,10 +48,9 @@ const EditUser = () => {
           />
         </div>
 
-        <div className='field'>
-          <label className='label'>Amžius</label>
+        <div className={css.field}>
           <input
-            className='input'
+            className={css.input}
             type='text'
             placeholder='Amžius'
             value={age}
@@ -59,10 +58,9 @@ const EditUser = () => {
           />
         </div>
 
-        <div className='field'>
-          <label className='label'>El. paštas</label>
+        <div className={css.field}>
           <input
-            className='input'
+            className={css.input}
             type='text'
             placeholder='El. paštas'
             value={email}
@@ -70,10 +68,9 @@ const EditUser = () => {
           />
         </div>
 
-        <div className='field'>
-          <label className='label'>Slaptažodis</label>
+        <div className={css.field}>
           <input
-            className='input'
+            className={css.input}
             type='password'
             placeholder='Slaptažodis'
             value={password}
@@ -81,8 +78,8 @@ const EditUser = () => {
           />
         </div>
 
-        <div className='field'>
-          <button className={css.btnBlue}>Atnaujinti</button>
+        <div className={css.field}>
+          <button className={css.btnGreen}>Atnaujinti</button>
         </div>
       </form>
     </div>

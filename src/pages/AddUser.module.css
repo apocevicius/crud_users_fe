@@ -11,48 +11,16 @@ form {
   box-sizing: border-box;
 }
 
-.card {
-  margin-top: 36px;
-  background-color: rgb(112, 202, 124);
-  padding: 20px;
-  width: 400px;
-  height: 350px;
-  border: 2px solid rgba(255, 255, 255, 0.514);
-  border-radius: 15%;
-}
-
 .btnGreen {
+  cursor: pointer;
   border: none;
   padding: 16px 32px;
   background-color: rgba(81, 112, 18, 0.548);
+  color: rgba(255, 255, 255, 0.774);
   width: 50%;
 }
 
-/* 
-#updateInput {
-  width: 100px;
-  height: 30px;
-  margin-bottom: 10px;
-} */
-
-/* .btn {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    min-width: 5%;
-    height: 30px;
-    border: none;
-    cursor: pointer;
+.btnGreen:hover {
+  background-color: rgba(42, 59, 9, 0.548);
 }
 
-button:hover {
-    background-color: rgb(156, 228, 162);
-    
-} */
-
-/* .input {
-  min-height: 30px;
-  min-width: 15%;
-  margin-bottom: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.363);
-} */

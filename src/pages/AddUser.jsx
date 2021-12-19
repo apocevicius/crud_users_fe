@@ -23,9 +23,9 @@ const AddUser = () => {
 
   return (
     <div>
+      <h2>Sukurti vartotoją</h2>
       <form onSubmit={saveUser}>
         <div className={css.field}>
-          
           <input
             className={css.input}
             type='text'
@@ -36,7 +36,6 @@ const AddUser = () => {
         </div>
 
         <div className={css.field}>
- 
           <input
             className={css.input}
             type='text'
@@ -66,7 +65,7 @@ const AddUser = () => {
           />
         </div>
 
-        <div className={css.fieldBtn}>
+        <div className=''>
           <button className={css.btnGreen}>Išsaugoti</button>
         </div>
       </form>
