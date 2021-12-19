@@ -1,24 +1,30 @@
-import { Route, Switch } from 'react-router-dom';
-import AllUsers from './pages/UserList';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import UserList from './pages/UserList';
 import AddUser from './pages/AddUser';
-import HomePage from './pages/HomePage';
+import EditUser from './pages/EditUser';
 import './App.css';
 
 function App() {
   return (
-    <div className='App'>
-      <Switch>
-        <Route path='/all'>
-          <AllUsers />
-        </Route>
-        <Route path='/add'>
-          <AddUser />
-        </Route>
-        <Route path='/'>
-          <HomePage />
-        </Route>
-      </Switch>
-    </div>
+    <Router>
+      <div className='container'>
+        <div className='columns'>
+          <div className='columnHalf'>
+            <Switch>
+              <Route exact path='/'>
+                <UserList />
+              </Route>
+              <Route exact path='/add'>
+                <AddUser />
+              </Route>
+              <Route exact path='/edit/:id'>
+                <EditUser />
+              </Route>
+            </Switch>
+          </div>
+        </div>
+      </div>
+    </Router>
   );
 }
 
