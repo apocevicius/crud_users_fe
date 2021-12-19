@@ -25,6 +25,12 @@
     border-radius: 15%;
 }
 
+#updateInput {
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
 .btn {
     justify-content: center;
     align-items: center;

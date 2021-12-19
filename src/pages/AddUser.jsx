@@ -9,6 +9,8 @@ function AddUser() {
   const [password, setPassword] = useState('');
   const [usersList, setUsersList] = useState([]);
 
+  const [newUpdate, setNewUpdate] = useState('');
+
   useEffect(() => {
     Axios.get('http://localhost:8000/api/get').then((response) => {
       setUsersList(response.data);
@@ -35,9 +37,9 @@ function AddUser() {
 
   const updateUser = (user) => {
     Axios.put('http://localhost:8000/api/update', {
-      name: name,
-      age: age,
-      email: email,
+      name: user,
+      age: newUpdate,
+      email: newUpdate,
     });
   };
 
@@ -94,13 +96,23 @@ function AddUser() {
               <p>{value.age}</p>
               <h4>El paštas:</h4>
               <p>{value.email}</p>
-              <button>Atnaujinti</button>
+
               <button
                 onClick={() => {
                   deleteUser(value.name);
                 }}
               >
                 Ištrinti
+              </button>
+              <button onClick={() => {updateUser(value.name)}}>
+                <input
+                  type='text'
+                  id='updateInput'
+                  onChange={(e) => {
+                    setNewUpdate(e.target.value);
+                  }}
+                />
+                Atnaujinti
               </button>
             </div>
           );
