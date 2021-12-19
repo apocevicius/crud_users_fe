@@ -5,6 +5,7 @@
 }
 
 body {
+  background-color: rgba(175, 175, 175, 0.247);
   font-family: 'Lato';
   margin: 0;
   min-width: 375px;

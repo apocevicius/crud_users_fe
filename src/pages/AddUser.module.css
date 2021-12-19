@@ -1,35 +1,39 @@
-.form {
-/* padding: 30px; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(173, 172, 172);
+form {
+  padding: 40px;
+  margin-top: 30px;
+  background-color: rgb(223, 219, 219);
 }
 
-.form input {
-    
-    width: 250px;
-    height: 25px;
-    margin: 5px;
-    font-size: 15px;
+.input {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
 
 .card {
-    margin-top: 36px;
-    background-color: rgb(112, 202, 124);
-    padding: 20px;
-    width: 400px;
-    height: 350px;
-    border: 2px solid rgba(255, 255, 255, 0.514);
-    border-radius: 15%;
+  margin-top: 36px;
+  background-color: rgb(112, 202, 124);
+  padding: 20px;
+  width: 400px;
+  height: 350px;
+  border: 2px solid rgba(255, 255, 255, 0.514);
+  border-radius: 15%;
 }
 
-#updateInput {
-    width: 100px;
-    height: 30px;
-    margin-bottom: 10px;
+.btnGreen {
+  border: none;
+  padding: 16px 32px;
+  background-color: rgba(81, 112, 18, 0.548);
+  width: 50%;
 }
+
+/* 
+#updateInput {
+  width: 100px;
+  height: 30px;
+  margin-bottom: 10px;
+} */
 
 /* .btn {
     justify-content: center;
@@ -46,11 +50,9 @@ button:hover {
     
 } */
 
-.input {
-    min-height: 30px;
-    min-width: 15%;
-    margin-bottom: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.363);
-}
-
-
+/* .input {
+  min-height: 30px;
+  min-width: 15%;
+  margin-bottom: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.363);
+} */

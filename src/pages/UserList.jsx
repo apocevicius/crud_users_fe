@@ -25,7 +25,7 @@ const UserList = () => {
       {/* <Link to='/add' className={css.addNewBtn}>
         Pridėti naują
       </Link> */}
-      <h1>Vartotojai:</h1>
+      <h2>Vartotojai:</h2>
       <table className={css.tableView}>
         <thead>
           <tr>
@@ -44,8 +44,8 @@ const UserList = () => {
               <td>{user.age}</td>
               <td>{user.email}</td>
               <td>
-                <Link to={`/edit/${user.id}`} className={css.btnBlue}>
-                  Redaguoti
+                <Link to={`/edit/${user.id}`} >
+                  <button className={css.btnBlue}>Redaguoti</button>
                 </Link>
                 <button
                   onClick={() => deleteUser(user.id)}

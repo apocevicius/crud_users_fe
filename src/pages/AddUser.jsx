@@ -24,10 +24,10 @@ const AddUser = () => {
   return (
     <div>
       <form onSubmit={saveUser}>
-        <div className='field'>
-          <label className='label'>Vardas</label>
+        <div className={css.field}>
+          
           <input
-            className='input'
+            className={css.input}
             type='text'
             placeholder='Vardas'
             value={name}
@@ -35,10 +35,10 @@ const AddUser = () => {
           />
         </div>
 
-        <div className='field'>
-          <label className='label'>Amžius</label>
+        <div className={css.field}>
+ 
           <input
-            className='input'
+            className={css.input}
             type='text'
             placeholder='Amžius'
             value={age}
@@ -46,10 +46,9 @@ const AddUser = () => {
           />
         </div>
 
-        <div className='field'>
-          <label className='label'>El. paštas</label>
+        <div className={css.field}>
           <input
-            className='input'
+            className={css.input}
             type='text'
             placeholder='El. paštas'
             value={email}
@@ -57,10 +56,9 @@ const AddUser = () => {
           />
         </div>
 
-        <div className='field'>
-          <label className='label'>Slaptažodis</label>
+        <div className={css.field}>
           <input
-            className='input'
+            className={css.input}
             type='password'
             placeholder='Slaptažodis'
             value={password}
@@ -68,7 +66,7 @@ const AddUser = () => {
           />
         </div>
 
-        <div className='field'>
+        <div className={css.fieldBtn}>
           <button className={css.btnGreen}>Išsaugoti</button>
         </div>
       </form>

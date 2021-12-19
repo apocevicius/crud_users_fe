@@ -1,13 +1,14 @@
-h1 {
-    margin-top: 50px;
+h2 {
+  color: rgb(67, 83, 43);
+  margin-top: 50px;
 }
 
 .tableView {
-  font-style: italic;
+  background-color: white;
   border-collapse: collapse;
   margin: 35px 0;
   font-size: 0.9em;
-  min-width: 400px;
+  min-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -21,7 +22,8 @@ h1 {
 
 .tableView th,
 .tableView td {
-  padding: 12px 15px;
+  padding: 15px 20px;
+  text-align: left;
 }
 
 .tableView tbody tr {
@@ -49,16 +51,23 @@ h1 {
   font-size: 16px;
 }
 
-/* .btnBlue {
+.btnBlue {
+  cursor: pointer;
   margin: 10px;
-  padding: 2px;
-  color: black;
-  background-color: aqua;
-  border: 1px solid black;
+  padding: 10px;
+  border: none;
   border-radius: 5px;
   text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: rgb(134, 198, 250);
 }
 
 .btnRed {
+  cursor: pointer;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
   background-color: tomato;
-} */
+}
