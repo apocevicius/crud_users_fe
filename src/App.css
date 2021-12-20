@@ -15,6 +15,7 @@ body {
 .container {
   background-color: rgba(61, 61, 61, 0.082);
   width: 100%;
-  max-width: 900px;
+  padding: 15px;
+  max-width: 1000px;
   margin: 0 auto;
 }
